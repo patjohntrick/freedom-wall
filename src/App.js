@@ -13,7 +13,7 @@ function App() {
       </h1>
       <Search />
       {/*Message*/}
-      {/* <PostMessage /> */}
+      <PostMessage />
     </div>
   );
 }

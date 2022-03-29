@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { BsPlus } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
-const Post = () => {
-  const [form, setForm] = useState(false);
-
+const Post = ({ handleSubmit, form, setForm }) => {
   const Form = () => {
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      const postMessage = {};
-    };
     return (
-      <form action="" className=" p-4 bg-zinc-900 rounded space-y-2 w-[280px] ">
+      <form
+        onSubmit={handleSubmit}
+        className=" p-4 bg-zinc-900 rounded space-y-2 w-[280px] "
+      >
         <p className=" text-center text-gray-300 text-xl ">
           Let us know what's in your mind
         </p>
@@ -21,6 +18,7 @@ const Post = () => {
           name="author"
           placeholder="Enter your name/alias"
           className="w-full p-3 rounded outline-none border-none focus:outline-[#13aca9]"
+          required
         />
         <br />
         <textarea
@@ -30,6 +28,7 @@ const Post = () => {
           rows="8"
           placeholder="Enter your thought, feeling, emotions, status, etc..."
           className="p-3 rounded outline-none border-none focus:outline-[#13aca9] w-full"
+          required
         />
         <br />
         <div className="btn flex justify-center space-x-1">

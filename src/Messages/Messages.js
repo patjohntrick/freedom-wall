@@ -3,7 +3,7 @@ import { AiFillLike, AiFillHeart } from "react-icons/ai";
 import { FaSadCry, FaAngry } from "react-icons/fa";
 import { RiEmotionLaughFill } from "react-icons/ri";
 
-const Messages = ({ messages, setMessages }) => {
+const Messages = ({ messages, setMessages, likeButton }) => {
   return (
     <div>
       <div className="messages text-gray-300 w-[90%] m-auto">
@@ -40,35 +40,38 @@ const Messages = ({ messages, setMessages }) => {
                     </p>
                   </div>
                   <div className="reaction space-x-1 flex text-sm items-center justify-center w-full md:justify-center md:w-auto">
-                    <div className="btn flex bg-zinc-900 p-1 rounded">
+                    <div
+                      className="btn flex bg-zinc-900 p-1 rounded"
+                      onClick={() => likeButton(message._id)}
+                    >
                       <button>
                         <AiFillLike />
                       </button>
-                      <p>10+</p>
+                      <p>{message.like}</p>
                     </div>
                     <div className="btn flex bg-zinc-900 p-1 rounded">
                       <button>
                         <AiFillHeart />
                       </button>
-                      <p>10+</p>
+                      <p>{message.love}</p>
                     </div>
                     <div className="btn flex bg-zinc-900 p-1 rounded">
                       <button>
                         <RiEmotionLaughFill />
                       </button>
-                      <p>10+</p>
+                      <p>{message.happy}</p>
                     </div>
                     <div className="btn flex bg-zinc-900 p-1 rounded">
                       <button>
                         <FaSadCry />
                       </button>
-                      <p>10+</p>
+                      <p>{message.cry}</p>
                     </div>
                     <div className="btn flex bg-zinc-900 p-1 rounded">
                       <button>
                         <FaAngry />
                       </button>
-                      <p>10+</p>
+                      <p>{message.angry}</p>
                     </div>
                   </div>
                 </footer>
