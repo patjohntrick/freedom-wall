@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/freedom-wall/static/css/main.ea77c6ce.css",
+    "main.js": "/freedom-wall/static/js/main.ef81d38c.js",
+    "index.html": "/freedom-wall/index.html",
+    "main.ea77c6ce.css.map": "/freedom-wall/static/css/main.ea77c6ce.css.map",
+    "main.ef81d38c.js.map": "/freedom-wall/static/js/main.ef81d38c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea77c6ce.css",
+    "static/js/main.ef81d38c.js"
+  ]
+}
