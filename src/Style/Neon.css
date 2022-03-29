@@ -1,0 +1,24 @@
+.neonText {
+  animation: flicker 5s infinite alternate;
+  color: #fff;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 10px #13aca9, 0 0 20px #13aca9,
+      0 0 20px #13aca9;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
