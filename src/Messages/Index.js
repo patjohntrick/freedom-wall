@@ -7,7 +7,7 @@ const Index = () => {
   const [messages, setMessages] = useState([]);
   const [form, setForm] = useState(false);
 
-  const baseURI = "https://mysecondmern-freedom-wall.herokuapp.com/messages";
+  const baseURI = "http://localhost:5000/messages";
   // GET messages
   const fetchMessage = async () => {
     await axios

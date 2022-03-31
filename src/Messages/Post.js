@@ -7,7 +7,7 @@ const Post = ({ handleSubmit, form, setForm }) => {
     return (
       <form
         onSubmit={handleSubmit}
-        className=" p-4 bg-zinc-900 rounded space-y-2 w-[280px] "
+        className=" p-4 bg-zinc-900 rounded space-y-2 w-[280px] md:w-[320px] "
       >
         <p className=" text-center text-gray-300 text-xl ">
           Let us know what's in your mind
@@ -74,7 +74,7 @@ const Post = ({ handleSubmit, form, setForm }) => {
         className=" fixed top-[95%] translate-y-[-95%] right-[5%] translate-x-[-5%] z-10 "
         onClick={handleOpenClose}
       >
-        <button className=" p-1 text-white bg-[#13aca9] hover:hover:bg-[#108f8d] rounded-full text-4xl ">
+        <button className=" p-1 text-white bg-[#13aca9] hover:hover:bg-[#108f8d] rounded-full text-4xl shadow-xl animate-bounce ">
           <BsPlus />
         </button>
       </div>
