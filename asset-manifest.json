@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/freedom-wall/static/css/main.27801543.css",
-    "main.js": "/freedom-wall/static/js/main.65ca58e3.js",
+    "main.js": "/freedom-wall/static/js/main.6ef530f8.js",
     "index.html": "/freedom-wall/index.html",
     "main.27801543.css.map": "/freedom-wall/static/css/main.27801543.css.map",
-    "main.65ca58e3.js.map": "/freedom-wall/static/js/main.65ca58e3.js.map"
+    "main.6ef530f8.js.map": "/freedom-wall/static/js/main.6ef530f8.js.map"
   },
   "entrypoints": [
     "static/css/main.27801543.css",
-    "static/js/main.65ca58e3.js"
+    "static/js/main.6ef530f8.js"
   ]
 }
